@@ -2,10 +2,13 @@ install:
 	npm ci
 
 brain-games:
-	bin/brain-games.js
+	brainGames/bin/brain-games.js
 
 brain-even:
-	bin/brain-even.js
+	brainGames/bin/brain-even.js
+
+brain-calc:
+	brainGames/bin/brain-calc.js
 
 publish:
 	npm publish --dry-run

@@ -18,8 +18,9 @@
   "homepage": "https://github.com/StrangerAlien/frontend-project-44#readme",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-games": "brainGames/bin/brain-games.js",
+    "brain-even": "brainGames/bin/brain-even.js",
+    "brain-calc": "brainGames/bin/brain-calc.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
