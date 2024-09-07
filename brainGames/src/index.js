@@ -16,7 +16,7 @@ export default (brainGame) => {
     const expressioN = param.expression;
     console.log(`Question: ${expressioN}`);
 
-    const answer = readlineSync.question();
+    const answer = readlineSync.question('Your answer: ');
     const rigthAnsweR = param.rigthAnswer;
 
     if (answer !== rigthAnsweR) {
