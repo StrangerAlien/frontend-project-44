@@ -1,10 +1,10 @@
+import getRandomInt from '../getRandomInt.js';
+
 export default () => {
   const ruleS = 'What is the result of the expression?';
 
-  const getRandomInt = (min = 0, max = 10) => Math.floor(Math.random() * (max - min) + min);
-
-  const firstNum = getRandomInt();
-  const secondNum = getRandomInt();
+  const firstNum = getRandomInt(0, 10);
+  const secondNum = getRandomInt(0, 10);
 
   const action = ['+', '-', '*'];
   const operation = action[getRandomInt(0, 3)];
