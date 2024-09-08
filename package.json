@@ -18,11 +18,11 @@
   "homepage": "https://github.com/StrangerAlien/frontend-project-44#readme",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js",
-    "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression": "bin/brain-progression.js",
+    "brain-games": "brainGames/bin/brain-games.js",
+    "brain-even": "brainGames/bin/brain-even.js",
+    "brain-calc": "brainGames/bin/brain-calc.js",
+    "brain-gcd": "brainGames/bin/brain-gcd.js",
+    "brain-progression": "brainGames/bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
   "dependencies": {
