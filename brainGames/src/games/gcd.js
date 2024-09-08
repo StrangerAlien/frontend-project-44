@@ -12,7 +12,7 @@ export default () => {
 
   return {
     rules: ruleS,
-    expression: expressioN,
+    expression: String(expressioN),
     rigthAnswer: String(rigthAnsweR),
   };
 };
