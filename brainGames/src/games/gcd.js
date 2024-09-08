@@ -1,4 +1,4 @@
-import { gcd } from 'mathjs';
+// import { gcd } from 'mathjs';
 import getRandomInt from '../getRandomInt.js';
 
 export default () => {
@@ -8,8 +8,15 @@ export default () => {
   const secondNum = getRandomInt(1, 100);
 
   const expressioN = `${firstNum} ${secondNum}`;
-  const rigthAnsweR = gcd(firstNum, secondNum);
 
+  const gcd = (a, b) => {
+    if (!b) {
+      return a;
+    }
+    return gcd(b, a % b);
+  };
+
+  const rigthAnsweR = gcd(firstNum, secondNum);
   return {
     rules: ruleS,
     expression: expressioN,
