@@ -11,13 +11,13 @@ export default (brainGame) => {
 
   let i = 1;
   while (i <= round) {
-    const param = brainGame();
+    const params = brainGame();
 
-    const expressioN = param.expression;
+    const expressioN = params.expression;
     console.log(`Question: ${expressioN}`);
 
     const answer = readlineSync.question('Your answer: ');
-    const rigthAnsweR = param.rigthAnswer;
+    const rigthAnsweR = params.rigthAnswer;
 
     if (answer !== rigthAnsweR) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rigthAnsweR}'.

@@ -20,9 +20,11 @@
   "bin": {
     "brain-games": "brainGames/bin/brain-games.js",
     "brain-even": "brainGames/bin/brain-even.js",
-    "brain-calc": "brainGames/bin/brain-calc.js"
+    "brain-calc": "brainGames/bin/brain-calc.js",
+    "brain-gcd": "brainGames/bin/brain-gcd.js"
   },
   "dependencies": {
+    "mathjs": "^13.1.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
