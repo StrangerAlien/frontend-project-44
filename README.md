@@ -16,7 +16,7 @@
     brain-prime - Определение простого числа.
 
 ### Пример игры:
-```bash
+```
 brain-progression
 Welcome to the Brain Game!
 What number is missing in the progression?
