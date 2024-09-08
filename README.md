@@ -46,5 +46,5 @@ git clone https://github.com/StrangerAlien/frontend-project-44
 
 cd frontend-project-44/
 
-make install
+sudo make install
 ```
