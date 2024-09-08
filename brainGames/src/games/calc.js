@@ -9,7 +9,7 @@ export default () => {
   const action = ['+', '-', '*'];
   const operation = action[getRandomInt(0, 3)];
 
-  const exressioN = `${firstNum} ${operation} ${secondNum}`;
+  const expressioN = `${firstNum} ${operation} ${secondNum}`;
 
   let rigthAnsweR = NaN;
 
@@ -29,7 +29,7 @@ export default () => {
 
   return {
     rules: ruleS,
-    expression: exressioN,
+    expression: expressioN,
     rigthAnswer: String(rigthAnsweR),
   };
 };

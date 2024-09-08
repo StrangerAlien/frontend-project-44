@@ -7,12 +7,12 @@ export default () => {
   const firstNum = getRandomInt(1, 100);
   const secondNum = getRandomInt(1, 100);
 
-  const exressioN = `${firstNum} ${secondNum}`;
+  const expressioN = `${firstNum} ${secondNum}`;
   const rigthAnsweR = gcd(firstNum, secondNum);
 
   return {
     rules: ruleS,
-    expression: exressioN,
+    expression: expressioN,
     rigthAnswer: String(rigthAnsweR),
   };
 };

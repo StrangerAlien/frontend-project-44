@@ -21,9 +21,11 @@
     "brain-games": "brainGames/bin/brain-games.js",
     "brain-even": "brainGames/bin/brain-even.js",
     "brain-calc": "brainGames/bin/brain-calc.js",
-    "brain-gcd": "brainGames/bin/brain-gcd.js"
+    "brain-gcd": "brainGames/bin/brain-gcd.js",
+    "brain-progression": "brainGames/bin/brain-progression.js"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "mathjs": "^13.1.1",
     "readline-sync": "^1.4.10"
   },
