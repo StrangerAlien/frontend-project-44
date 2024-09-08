@@ -17,6 +17,7 @@ export default () => {
   };
 
   const rigthAnsweR = gcd(firstNum, secondNum);
+
   return {
     rules: ruleS,
     expression: expressioN,
