@@ -33,3 +33,18 @@ Your answer: 24 # Пользователь вводит ответ
 Correct!
 Congratulations, Aleksei!
 ```
+## Dependencies
+
+- node.js: ^22.8.0
+- readline-sync: ^1.4.10
+- lodash: ^4.17.21
+
+## Install
+
+```bash
+git clone https://github.com/StrangerAlien/frontend-project-44
+
+cd frontend-project-44/
+
+make install
+```
