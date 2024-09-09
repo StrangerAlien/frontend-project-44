@@ -2,7 +2,7 @@ import _ from 'lodash';
 import getRandomInt from '../getRandomInt.js';
 
 export default () => {
-  const ruleS = 'What number is missing in the progression?';
+  const rules = 'What number is missing in the progression?';
 
   const start = getRandomInt(0, 50);
   const step = getRandomInt(2, 6);
@@ -12,13 +12,9 @@ export default () => {
   /* eslint-disable-next-line */
   let progression = _.range(start, end, step);
   const hiddenNum = getRandomInt(0, length - 1);
-  const rigthAnsweR = progression[hiddenNum];
+  const rigthAnswer = progression[hiddenNum];
   progression[hiddenNum] = '..';
-  const expressioN = progression.join(' ');
+  const expression = progression.join(' ');
 
-  return {
-    rules: ruleS,
-    expression: expressioN,
-    rigthAnswer: String(rigthAnsweR),
-  };
+  return { rules, expression, rigthAnswer: String(rigthAnswer) };
 };

@@ -9,17 +9,13 @@ const gcd = (a, b) => {
 };
 
 export default () => {
-  const ruleS = 'Find the greatest common divisor of given numbers.';
+  const rules = 'Find the greatest common divisor of given numbers.';
 
   const firstNum = getRandomInt(1, 100);
   const secondNum = getRandomInt(1, 100);
 
-  const expressioN = `${firstNum} ${secondNum}`;
-  const rigthAnsweR = gcd(firstNum, secondNum);
+  const expression = `${firstNum} ${secondNum}`;
+  const rigthAnswer = gcd(firstNum, secondNum);
 
-  return {
-    rules: ruleS,
-    expression: expressioN,
-    rigthAnswer: String(rigthAnsweR),
-  };
+  return { rules, expression, rigthAnswer: String(rigthAnswer) };
 };

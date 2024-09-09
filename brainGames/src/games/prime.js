@@ -9,14 +9,10 @@ const isPrime = (num) => {
 };
 
 export default () => {
-  const ruleS = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-  const expressioN = getRandomInt(1, 200);
-  const rigthAnsweR = isPrime(expressioN) ? 'yes' : 'no';
+  const expression = getRandomInt(1, 200);
+  const rigthAnswer = isPrime(expression) ? 'yes' : 'no';
 
-  return {
-    rules: ruleS,
-    expression: String(expressioN),
-    rigthAnswer: rigthAnsweR,
-  };
+  return { rules, expression: String(expression), rigthAnswer };
 };

@@ -12,20 +12,16 @@ export default (brainGame) => {
   let i = 1;
   while (i <= round) {
     const params = brainGame();
-
-    const expressioN = params.expression;
-    console.log(`Question: ${expressioN}`);
-
+    console.log(`Question: ${params.expression}`);
     const answer = readlineSync.question('Your answer: ');
-    const rigthAnsweR = params.rigthAnswer;
 
-    if (answer !== rigthAnsweR) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rigthAnsweR}'.
+    if (answer !== params.rigthAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${params.rigthAnswer}'.
 Let's try again, ${name}!`);
       return false;
     }
 
-    if (answer === rigthAnsweR) console.log('Correct!');
+    if (answer === params.rigthAnswer) console.log('Correct!');
 
     i += 1;
   }
