@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 import indexGame from '../src/index.js';
-import { prime, rules } from '../src/games/prime.js';
+import { primeGame, rules } from '../src/games/prime.js';
 
-indexGame(prime, rules);
+indexGame(primeGame, rules);
