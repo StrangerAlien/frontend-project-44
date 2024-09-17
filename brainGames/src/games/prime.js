@@ -10,11 +10,11 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-const prime = () => {
+const primeGame = () => {
   const expression = getRandomInt(1, 200);
   const rigthAnswer = isPrime(expression) ? 'yes' : 'no';
 
   return { expression: String(expression), rigthAnswer };
 };
 
-export { rules, prime };
+export { rules, primeGame };

@@ -2,7 +2,7 @@ import getRandomInt from '../getRandomInt.js';
 
 const rules = () => 'What is the result of the expression?';
 
-const calc = () => {
+const calcGame = () => {
   const firstNum = getRandomInt(0, 10);
   const secondNum = getRandomInt(0, 10);
 
@@ -30,4 +30,4 @@ const calc = () => {
   return { expression, rigthAnswer: String(rigthAnswer) };
 };
 
-export { calc, rules };
+export { calcGame, rules };

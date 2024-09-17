@@ -10,7 +10,7 @@ const isGcd = (a, b) => {
   return isGcd(b, a % b);
 };
 
-const gcd = () => {
+const gcdGame = () => {
   const firstNum = getRandomInt(1, 100);
   const secondNum = getRandomInt(1, 100);
 
@@ -20,4 +20,4 @@ const gcd = () => {
   return { expression, rigthAnswer: String(rigthAnswer) };
 };
 
-export { gcd, rules };
+export { gcdGame, rules };

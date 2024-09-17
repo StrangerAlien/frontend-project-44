@@ -3,7 +3,7 @@ import getRandomInt from '../getRandomInt.js';
 
 const rules = () => 'What number is missing in the progression?';
 
-const progression = () => {
+const progressionGame = () => {
   const start = getRandomInt(0, 50);
   const step = getRandomInt(2, 6);
   const length = getRandomInt(5, 10);
@@ -19,4 +19,4 @@ const progression = () => {
   return { expression, rigthAnswer: String(rigthAnswer) };
 };
 
-export { progression, rules };
+export { progressionGame, rules };
