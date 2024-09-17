@@ -1,9 +1,9 @@
 import _ from 'lodash';
 import getRandomInt from '../getRandomInt.js';
 
-export default () => {
-  const rules = 'What number is missing in the progression?';
+const rules = () => 'What number is missing in the progression?';
 
+const progression = () => {
   const start = getRandomInt(0, 50);
   const step = getRandomInt(2, 6);
   const length = getRandomInt(5, 10);
@@ -16,5 +16,7 @@ export default () => {
   progression[hiddenNum] = '..';
   const expression = progression.join(' ');
 
-  return { rules, expression, rigthAnswer: String(rigthAnswer) };
+  return { expression, rigthAnswer: String(rigthAnswer) };
 };
+
+export { progression, rules };

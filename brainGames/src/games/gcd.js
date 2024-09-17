@@ -1,21 +1,23 @@
 // import { gcd } from 'mathjs';
 import getRandomInt from '../getRandomInt.js';
 
-const gcd = (a, b) => {
+const rules = () => 'Find the greatest common divisor of given numbers.';
+
+const isGcd = (a, b) => {
   if (!b) {
     return a;
   }
-  return gcd(b, a % b);
+  return isGcd(b, a % b);
 };
 
-export default () => {
-  const rules = 'Find the greatest common divisor of given numbers.';
-
+const gcd = () => {
   const firstNum = getRandomInt(1, 100);
   const secondNum = getRandomInt(1, 100);
 
   const expression = `${firstNum} ${secondNum}`;
-  const rigthAnswer = gcd(firstNum, secondNum);
+  const rigthAnswer = isGcd(firstNum, secondNum);
 
-  return { rules, expression, rigthAnswer: String(rigthAnswer) };
+  return { expression, rigthAnswer: String(rigthAnswer) };
 };
+
+export { gcd, rules };

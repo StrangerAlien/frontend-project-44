@@ -1,8 +1,8 @@
 import getRandomInt from '../getRandomInt.js';
 
-export default () => {
-  const rules = 'What is the result of the expression?';
+const rules = () => 'What is the result of the expression?';
 
+const calc = () => {
   const firstNum = getRandomInt(0, 10);
   const secondNum = getRandomInt(0, 10);
 
@@ -27,5 +27,7 @@ export default () => {
       return NaN;
   }
 
-  return { rules, expression, rigthAnswer: String(rigthAnswer) };
+  return { expression, rigthAnswer: String(rigthAnswer) };
 };
+
+export { calc, rules };
