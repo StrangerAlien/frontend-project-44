@@ -11,23 +11,27 @@ const calcGame = () => {
 
   const expression = `${firstNum} ${operation} ${secondNum}`;
 
-  let rigthAnswer = NaN;
+  const getRigthAnswer = (operatioN, firstNuM, secondNuM) => {
+    let answer = NaN;
 
-  switch (operation) {
-    case '+':
-      rigthAnswer = firstNum + secondNum;
-      break;
-    case '-':
-      rigthAnswer = firstNum - secondNum;
-      break;
-    case '*':
-      rigthAnswer = firstNum * secondNum;
-      break;
-    default:
-      return NaN;
-  }
+    switch (operatioN) {
+      case '+':
+        answer = firstNuM + secondNuM;
+        return answer;
+      case '-':
+        answer = firstNuM - secondNuM;
+        return answer;
+      case '*':
+        answer = firstNuM * secondNuM;
+        return answer;
+      default:
+        return NaN;
+    }
+  };
 
-  return { expression, rigthAnswer: String(rigthAnswer) };
+  const rigthAnswer = String(getRigthAnswer(operation, firstNum, secondNum));
+
+  return { expression, rigthAnswer };
 };
 
 export { calcGame, rules };
