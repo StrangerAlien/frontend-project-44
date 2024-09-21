@@ -12,18 +12,13 @@ const calcGame = () => {
   const expression = `${firstNum} ${operation} ${secondNum}`;
 
   const getRigthAnswer = (operatioN, firstNuM, secondNuM) => {
-    let answer = NaN;
-
     switch (operatioN) {
       case '+':
-        answer = firstNuM + secondNuM;
-        return answer;
+        return firstNuM + secondNuM;
       case '-':
-        answer = firstNuM - secondNuM;
-        return answer;
+        return firstNuM - secondNuM;
       case '*':
-        answer = firstNuM * secondNuM;
-        return answer;
+        return firstNuM * secondNuM;
       default:
         return NaN;
     }
