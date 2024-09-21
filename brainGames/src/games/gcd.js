@@ -13,7 +13,6 @@ const isGcd = (a, b) => {
 const gcdGame = () => {
   const firstNum = getRandomInt(1, 100);
   const secondNum = getRandomInt(1, 100);
-
   const expression = `${firstNum} ${secondNum}`;
   const rigthAnswer = isGcd(firstNum, secondNum);
 

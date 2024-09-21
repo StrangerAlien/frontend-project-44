@@ -5,10 +5,8 @@ const rules = () => 'What is the result of the expression?';
 const calcGame = () => {
   const firstNum = getRandomInt(0, 10);
   const secondNum = getRandomInt(0, 10);
-
   const action = ['+', '-', '*'];
   const operation = action[getRandomInt(0, 3)];
-
   const expression = `${firstNum} ${operation} ${secondNum}`;
 
   const getRigthAnswer = (operatioN, firstNuM, secondNuM) => {
