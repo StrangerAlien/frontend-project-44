@@ -10,7 +10,7 @@ const progressionGame = () => {
   const end = start + length * step;
 
   /* eslint-disable-next-line */
-  let progression = _.range(start, end, step);
+  var progression = _.range(start, end, step);
   const hiddenNum = getRandomInt(0, length - 1);
   const rigthAnswer = progression[hiddenNum];
   progression[hiddenNum] = '..';
